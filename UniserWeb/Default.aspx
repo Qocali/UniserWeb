@@ -55,11 +55,12 @@
                             <h3>istediyniz mehsulu Modelne gore</h3>
                         </div>
                        <div class="form-group ">
-        <select style="!important margin-bottom:40px;!important margin-top:30px;" id="category" class="form-control" name="CatId">
+        <select runat="server" style="margin-bottom:40px;margin-top:30px;" id="category" class="form-control" name="CatId">
          <option>Bmw</option>
          <option>Audi</option>
 
         </select>
+                            <button class="btn btn-success" onclick="Buttoncat_Click" runat="server" Text="Submit"/>Yoxla
                             
                         </div>
                         
@@ -84,7 +85,7 @@
                         </div>
                         <div class="form-group ">
                             
-                            <select style="!important margin-bottom:40px;!important margin-top:30px;" id="year" class="form-control" name="year">
+                            <select style=" margin-bottom:40px; margin-top:30px;" id="year" class="form-control" name="year">
                                   <option>2021</option>
          <option>2022</option>
                             </select>
@@ -121,7 +122,7 @@
                                 <div class="single-teacher-img">
                                     <a asp-route-id="@product.Id" asp-controller="Home" asp-action="Detail">
                                         
-                                            <img src="~/img/product/001e459f-3046-4514-ae20-0a3f6bc14829WhatsApp Image 2023-03-28 at 10.37.51 PM" alt="teacher" style="width: 360px !important;height: 250px !important; ">
+                                            <img src="~/img/product/e2ed539c-1ed0-4cf3-8274-c13f0fc93da8images (1)" alt="teacher" style="width: 360px !important;height: 250px !important; ">
                                             
                                     </a>
                                 </div>

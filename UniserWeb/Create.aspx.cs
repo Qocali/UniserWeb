@@ -33,7 +33,7 @@ namespace UniserWeb
                 {
                     FileUploadStatus.Text = "Please select a file to upload.";
                 }
-                SqlCommand cmd = new SqlCommand("INSERTINTO TEST (name,fathername) VALUES('" + UserName.Text + "','" + SubName.Text + "','"+Price.Text+ "','"+ FileUpload1.PostedFile.FileName + "' )", con);
+                SqlCommand cmd = new SqlCommand("INSERT INTO Products (name,fathername) VALUES('" + UserName.Text + "','" + SubName.Text + "','"+Price.Text+ "','"+Date.Text + "','" + FileUpload1.PostedFile.FileName + "' )", con);
 
                 con.Open();
 

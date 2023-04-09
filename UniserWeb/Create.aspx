@@ -15,12 +15,14 @@
              <asp:Label ID="label1" runat="server">SubName</asp:Label>  
 <asp:TextBox ID="SubName" runat="server" ToolTip="Enter User Name"></asp:TextBox> 
              <asp:Label ID="label2" runat="server">Price</asp:Label>  
+             <asp:Label ID="label3" runat="server">Year</asp:Label>  
+            <asp:TextBox ClientIDMode="Static" ID="Date" runat="server" CssClass="calendarImg" Width="100px" type="date"></asp:TextBox>
 <asp:TextBox ID="Price" runat="server" ToolTip="Enter User Name"></asp:TextBox>  
             <p>Browse to Upload File</p>  
             
         </div>  
         <p>  
-            <asp:Button ID="Button1" runat="server" Text="Upload File" OnClick="Button1_Click" />  
+            <asp:Button ID="Button1" CssClass="btn btn-success" runat="server" Text="Submit" OnClick="Button1_Click" />  
         </p>  
     </form>  
     <p>  
