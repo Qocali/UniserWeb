@@ -29,6 +29,8 @@ namespace UniserWeb
                 SqlDataAdapter sde = new SqlDataAdapter("Select * from Products", con);
                 DataSet ds = new DataSet();
                 sde.Fill(ds);
+                Turbo_Product.DataSource = ds;
+                Turbo_Product.DataBind();
                 DataGrid1.DataSource = ds;
                 DataGrid1.DataBind();
             }

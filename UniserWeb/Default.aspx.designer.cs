@@ -24,6 +24,15 @@ namespace UniserWeb
         protected global::System.Web.UI.HtmlControls.HtmlSelect category;
 
         /// <summary>
+        /// Turbo_Product control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater Turbo_Product;
+
+        /// <summary>
         /// DataGrid1 control.
         /// </summary>
         /// <remarks>

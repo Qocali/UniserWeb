@@ -91,6 +91,28 @@
                             </select>
                         </div>
 
+                        <div class="col-xs-12">
+                        <div class="course-title">
+                            <h3>istediyniz mehsulu Iline gore axtarin</h3>
+                        </div>
+                        <div class="form-group ">
+                            
+                            <select style="!important margin-bottom:40px;!important margin-top:30px;" id="year" class="form-control" name="year">
+                                @foreach (var item in ViewBag.Year)
+                                {
+
+                                    if (a.Contains(item.ToString("yyyy")))
+                                    {
+                                        continue;
+                                    }
+
+                                    <option value="@item.ToString("yyyy")">@item.ToString("yyyy")</option>
+                                    a += @item.ToString("yyyy");
+                                }
+
+                            </select>
+                        </div>
+
                         <form method="post" id="getData">
                             <div class="grid gap-6 mb-6 md:grid-cols-2">
                                 <div>
@@ -105,7 +127,6 @@
                                
                             <button type="button" id="button" class="btn btn-success">Tap</button>
                         </form>
-
                         <div class="course-form">
                             <form>
                                 <input id="productsearch" type="text" placeholder="Search..." />
@@ -114,6 +135,8 @@
                     </div>
                    
                 </div>
+                    <asp:Repeater id="Turbo_Product" runat="server">
+                        <ItemTemplate>
                 <div class="row" id="MyProducts" SelectMethod="productsGrid_GetData">
                      
  
@@ -122,13 +145,13 @@
                                 <div class="single-teacher-img">
                                     <a asp-route-id="@product.Id" asp-controller="Home" asp-action="Detail">
                                         
-                                            <img src="~/img/product/e2ed539c-1ed0-4cf3-8274-c13f0fc93da8images (1)" alt="teacher" style="width: 360px !important;height: 250px !important; ">
+                                            <img src="https://cdni.autocarindia.com/Utils/ImageResizer.ashx?n=https://cdni.autocarindia.com/Features/BMW_XM-002.jpg&w=700&q=90&c=1" alt="teacher" style="width: 360px !important;height: 250px !important; ">
                                             
                                     </a>
                                 </div>
                                 <div class="single-teacher-content text-center">
-                                    <h2><a href="#">Bmw</a></h2>
-                                         <h2><a href="#">Bmw</a></h2>
+                                    <h2><a href="#"><%# Eval("Name") %></a></h2>
+                                         <h2><a href="#"><%# Eval("SubName") %></a></h2>
                                     <h4>Good</h4>
                                     <ul>
                                             <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
@@ -143,6 +166,8 @@
 
                  
                 </div>
+                            </ItemTemplate>
+                        </asp:Repeater>
                   <asp:DataGrid ID="DataGrid1" runat="server">  
         </asp:DataGrid>  
                 <%--<div class="row" id="pagination">
