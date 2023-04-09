@@ -29,11 +29,10 @@
             <asp:Repeater id="Turbo_Product" runat="server">
                         <ItemTemplate>
                 <img alt="ecommerce" class="lg:w-1/2 w-full object-cover object-center rounded border border-gray-200" src="~/img/product/@item.ImageName">
-           </ItemTemplate>
-                        </asp:Repeater>
+           
             <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
-                <h2 class="text-sm title-font text-gray-500 tracking-widest"><%# Eval("Name") %></h2>
-                <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">Detail:<%# Eval("Detail") %></h1>
+                <h2 class="text-sm title-font text-gray-500 tracking-widest">Name<%# Eval("Name") %></h2>
+                <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">Detail:<%# Eval("SubName") %></h1>
                 <div class="flex mb-4">
                     <span class="flex items-center">
                         <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 text-red-500" viewBox="0 0 24 24">
@@ -106,7 +105,10 @@
                     </button>
                 </div>
             </div>
+                          
         </div>
+                              </ItemTemplate>
+                        </asp:Repeater>
     </div>
 </section>
 </asp:Content>
