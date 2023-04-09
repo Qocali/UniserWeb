@@ -60,13 +60,13 @@ namespace UniserWeb
         protected global::System.Web.UI.WebControls.Label label1;
 
         /// <summary>
-        /// TextBox1 control.
+        /// SubName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox SubName;
 
         /// <summary>
         /// label2 control.
@@ -78,13 +78,13 @@ namespace UniserWeb
         protected global::System.Web.UI.WebControls.Label label2;
 
         /// <summary>
-        /// TextBox2 control.
+        /// Price control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.TextBox Price;
 
         /// <summary>
         /// Button1 control.

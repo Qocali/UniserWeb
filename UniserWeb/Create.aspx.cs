@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Drawing;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -11,24 +13,35 @@ namespace UniserWeb
     {
         protected void Button1_Click(object sender, EventArgs e)
         {
-            if ((FileUpload1.PostedFile != null) && (FileUpload1.PostedFile.ContentLength > 0))
+            using (SqlConnection con = new SqlConnection("data source=DESKTOP-GIMUK1I\\SQLEXPRESS;database=Uniser;integrated security=SSPI;"))
             {
-                string fn = System.IO.Path.GetFileName(FileUpload1.PostedFile.FileName);
-                string SaveLocation = Server.MapPath("upload") + "\\" + fn;
-                try
+                if ((FileUpload1.PostedFile != null) && (FileUpload1.PostedFile.ContentLength > 0))
                 {
-                    FileUpload1.PostedFile.SaveAs(SaveLocation);
-                    FileUploadStatus.Text = "The file has been uploaded.";
+                    string fn = System.IO.Path.GetFileName(FileUpload1.PostedFile.FileName);
+                    string SaveLocation = Server.MapPath("~/img/product") + "\\" + fn;
+                    try
+                    {
+                        FileUpload1.PostedFile.SaveAs(SaveLocation);
+                        FileUploadStatus.Text = "The file has been uploaded.";
+                    }
+                    catch (Exception ex)
+                    {
+                        FileUploadStatus.Text = "Error: " + ex.Message;
+                    }
                 }
-                catch (Exception ex)
+                else
                 {
-                    FileUploadStatus.Text = "Error: " + ex.Message;
+                    FileUploadStatus.Text = "Please select a file to upload.";
                 }
+                SqlCommand cmd = new SqlCommand("INSERTINTO TEST (name,fathername) VALUES('" + UserName.Text + "','" + SubName.Text + "','"+Price.Text+ "','"+ FileUpload1.PostedFile.FileName + "' )", con);
+
+                con.Open();
+
+                cmd.ExecuteNonQuery();
+
+                con.Close();
             }
-            else
-            {
-                FileUploadStatus.Text = "Please select a file to upload.";
-            }
+            
         }
         protected void Page_Load(object sender, EventArgs e)
         {

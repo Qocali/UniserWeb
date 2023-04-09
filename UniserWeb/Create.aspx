@@ -13,9 +13,9 @@
              <asp:Label ID="labelId" runat="server">Name</asp:Label>  
 <asp:TextBox ID="UserName" runat="server" ToolTip="Enter User Name"></asp:TextBox>  
              <asp:Label ID="label1" runat="server">SubName</asp:Label>  
-<asp:TextBox ID="TextBox1" runat="server" ToolTip="Enter User Name"></asp:TextBox> 
+<asp:TextBox ID="SubName" runat="server" ToolTip="Enter User Name"></asp:TextBox> 
              <asp:Label ID="label2" runat="server">Price</asp:Label>  
-<asp:TextBox ID="TextBox2" runat="server" ToolTip="Enter User Name"></asp:TextBox>  
+<asp:TextBox ID="Price" runat="server" ToolTip="Enter User Name"></asp:TextBox>  
             <p>Browse to Upload File</p>  
             
         </div>  
