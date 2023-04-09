@@ -145,7 +145,7 @@
                                 <div class="single-teacher-img">
                                     <a asp-route-id="@product.Id" asp-controller="Home" asp-action="Detail">
                                         
-                                            <img src="https://cdni.autocarindia.com/Utils/ImageResizer.ashx?n=https://cdni.autocarindia.com/Features/BMW_XM-002.jpg&w=700&q=90&c=1" alt="teacher" style="width: 360px !important;height: 250px !important; ">
+                                           <asp:Image ID="Image1" runat="server" ImageUrl="~/img/product/<%# Eval("Image") %>" />
                                             
                                     </a>
                                 </div>
