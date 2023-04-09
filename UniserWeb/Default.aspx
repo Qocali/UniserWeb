@@ -29,10 +29,10 @@
             <div class="col-xs-12">
                 <div class="section-title text-center">
                     <h2>Mehsullarmizla tanis olun</h2>
-                    <a asp-controller="Home" asp-action="Create"
+                    <a href="Create.aspx"
                             data-te-ripple-init
                             data-te-ripple-color="light"
-                            class="flex items-center rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:bg-primary-700 hover:shadow-lg focus:bg-primary-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-800 active:shadow-lg">
+                            class="flex items-center rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:bg-primary-700 hover:shadow-lg focus:bg-primary-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-800 active:shadow-lg">Yeni Mehsul Yarat
                         <svg xmlns="http://www.w3.org/2000/svg"
                              viewBox="0 0 24 24"
                              fill="currentColor"
