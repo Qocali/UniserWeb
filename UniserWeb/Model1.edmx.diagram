@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="26d615c8865d4d9197535567d202117e" Name="Diagram1">
+        <EntityTypeShape EntityType="UniserModel.Category" Width="1.5" PointX="0.75" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniserModel.Marka" Width="1.5" PointX="3" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniserModel.ProductDetail" Width="1.5" PointX="7.5" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniserModel.ProductImage" Width="1.5" PointX="7.5" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="UniserModel.Product" Width="1.5" PointX="5.25" PointY="2" IsExpanded="true" />
+        <AssociationConnector Association="UniserModel.FK_Marka_Category_CategoryId" ManuallyRouted="false" />
+        <AssociationConnector Association="UniserModel.FK_Products_Category_CategoryId" ManuallyRouted="false" />
+        <AssociationConnector Association="UniserModel.FK_Products_Marka_MarkaId" ManuallyRouted="false" />
+        <AssociationConnector Association="UniserModel.FK_ProductDetails_Products_ProductId" ManuallyRouted="false" />
+        <AssociationConnector Association="UniserModel.FK_ProductImages_Products_ProductId" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
