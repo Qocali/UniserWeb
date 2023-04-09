@@ -145,12 +145,12 @@
                                 <div class="single-teacher-img">
                                     <a asp-route-id="@product.Id" asp-controller="Home" asp-action="Detail">
                                         
-                                           <asp:Image ID="Image1" runat="server" ImageUrl="~/img/product/<%# Eval("Image") %>" />
+                                           <asp:Image ID="Image1" runat="server" ImageUrl="https://media.ed.edmunds-media.com/bmw/x1/2023/oem/2023_bmw_x1_4dr-suv_xdrive28i_fq_oem_1_815.jpg" />
                                             
                                     </a>
                                 </div>
                                 <div class="single-teacher-content text-center">
-                                    <h2><a href="#"><%# Eval("Name") %></a></h2>
+                                    <h2><a href="Details.aspx"><%# Eval("Name") %></a></h2>
                                          <h2><a href="#"><%# Eval("SubName") %></a></h2>
                                     <h4>Good</h4>
                                     <ul>

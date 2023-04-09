@@ -12,16 +12,16 @@
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
 
-    <webopt:bundlereference runat="server" path="~/css/magnific-popup.css" />
-    <webopt:bundlereference runat="server" path="~/css/meanmenu.css" />
-    <webopt:bundlereference runat="server" path="~/css/owl.carousel.min.css" />
-    <webopt:bundlereference runat="server" path="~/css/font-awesome.min.css" />
-    <webopt:bundlereference runat="server" path="~/css/et-line-icon.css" />
-    <webopt:bundlereference runat="server" path="~/css/reset.css" />
-    <webopt:bundlereference runat="server" path="~/css/ionicons.min.css" />
-    <webopt:bundlereference runat="server" path="~/css/material-design-iconic-font.min.css" />
-    <webopt:bundlereference runat="server" path="~/css/css/style.css" />
-    <webopt:bundlereference runat="server" path="~/css/responsive.css" />
+    <link runat="server" href="~/css/magnific-popup.css" />
+    <link runat="server" href="~/css/meanmenu.css" />
+    <link href="~/css/owl.carousel.min.css" />
+    <link href="~/css/font-awesome.min.css" />
+    <link href="~/css/et-line-icon.css" />
+    <link href="~/css/reset.css" />
+    <link href="~/css/ionicons.min.css" />
+    <link href="~/css/material-design-iconic-font.min.css" />
+    <link href="~/css/css/style.css" />
+    <link href="~/css/responsive.css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.tailwindcss.com"></script>
