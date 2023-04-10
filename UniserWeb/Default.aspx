@@ -170,31 +170,25 @@
                         </asp:Repeater>
                   <asp:DataGrid ID="DataGrid1" runat="server">  
         </asp:DataGrid>  
-                <%--<div class="row" id="pagination">
+                <div class="row" id="pagination">
                     <div class="col-xs-12">
                         <div class="pagination">
                             <ul>
-                                  <%for (%> int i = 1; i <= ViewBag.Pagecount; i++ <%)
-                                {
-                                   %> if (ViewBag.Page == i)
-                                    {
-                                        <li style="z-index:3;color:#fff;background-color:#007bff;border-color:#007bff;" class="page-item active disabled">
-                                            <a class="page-link">@i</a>
+                                  <asp:Repeater id="Repeater1" runat="server">
+                        <ItemTemplate>
+                                 
+                                        <li  style="z-index:3;color:#fff;background-color:#007bff;border-color:#007bff;" class="page-item active disabled">
+                                            <a id="pagenation" class="page-link">1</a>
                                         </li>
-                                    }
-
-                                    else
-                                    {
+                                    
                                         <li class="page-item ">
                                             <a class="page-link" asp-controller="Home" asp-action="Index" asp-route-page="@i">@i</a>
                                         </li>
-
-                                    }
-
-                               <% }%>
+                                 </ItemTemplate>
+                        </asp:Repeater>
                             </ul>
                         </div>
-                    </div>--%>
+                    </div>
                 </div>
             </div>
         </div>

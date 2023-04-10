@@ -6,6 +6,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Web.DynamicData;
 
 namespace UniserWeb
 {
@@ -34,6 +35,8 @@ namespace UniserWeb
                 DataGrid1.DataSource = ds;
                 DataGrid1.DataBind();
             }
+            
+           
         }
        
     }
