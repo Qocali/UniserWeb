@@ -30,7 +30,8 @@
             
         </div>  
         <p>  
-            <asp:Button ID="Button1" CssClass="btn btn-success" runat="server" Text="Submit" OnClick="Button1_Click" />  
+            <a  ID="Button1" CssClass="btn btn-success" runat="server" Text="Submit" OnClick="Button1_Click">Yarat  </a>
+            <a ID="Button2" href="Default.aspx" CssClass="btn btn-primary" runat="server" Text="Submit" OnClick="Button2_Click"> Geri Qayit</a> 
         </p>  
     </form>  
     <p>  
